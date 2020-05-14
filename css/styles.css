@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+}
+
+a {
+  margin: 0 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+hr {
+  border-color: #0088FF;
+  border-style: dotted;
+  border-width: 8px 0 0 0;
+  margin: 35px auto;
+  width: 10%;
+}
+
+p {
+  text-indent: 3rem;
+  line-height: 2;
+}
+
+.btn {
+  border-radius: 20px;
+  color: white;
+  font-family: 'Ubuntu' sans-serif;
+  font-size: 2rem;
+  padding: 20px;
+  background-color: #0088FF;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0066DD;
+}
+
+.close {
+  display: none;
+}
+
+.link {
+  color: white;
+  font-family: 'Ubuntu' sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 1% 2%;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.link:hover {
+  color: #0044BB;
+}
+
+.open {
+  display: block;
+}
+
+.profile-picture {
+  width: 150px;
+}
+
+.project-thumbnail {
+  width: 33%;
+}
+
+.skill {
+  margin: auto;
+  padding: 3%;
+}
+
+.skill-description {
+  text-align: left;
+}
+
+.social-logo {
+  width: 50px;
+}
+
+#hamburger-button {
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 1%;
+}
+
+#header {
+  background-color: #0088FF;
+  color: white;
+  padding-bottom: 20px;
+}
+
+#header h1 {
+  font-family: 'Caveat', sans-serif;
+  font-size: 5.625rem;
+  margin-top: 0;
+}
+
+#main-container {
+  margin: 40px 12%;
+}
+
+#skill-html-css {
+  grid-area: a;
+}
+
+#skill-javascript {
+  grid-area: b;
+}
+
+#skill-react {
+  grid-area: c;
+}
+
+#skill-node {
+  grid-area: d;
+}
+
+#skill-mongodb {
+  grid-area: e;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "a a b b c c"
+  ". d d e e .";
+}
+
+#socials {
+  background-color: hsl(40, 25%, 55%);
+  height: 50px;
+  padding: 25px;
+}
+
+@media screen and (min-width: 1355px) {
+  address {
+    column-count: 2;
+  }
+  .logo-rectangle {
+    width: 150px;
+  }
+  .logo-square {
+    width: 75px;
+  }
+  #hamburger-button {
+    display: none;
+  }
+  #nav-links {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 1354px) {
+  .logo-rectangle {
+    width: 80%;
+  }
+  .logo-square {
+    width: 40%;
+  }
+  #hamburger-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #nav-links a {
+    display: block;
+    text-align: left;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Casey Johnson</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3b2b11911.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <i id="hamburger-button" class="fas fa-bars"></i>
+      <div id="nav-links" class="close">
+        <a href="#technologies" class="link">Technologies</a>
+        <a href="#projects" class="link">Projects</a>
+        <a href="#contact-me" class="link">Contact Me</a>
+        <a href="#socials" class="link">Socials</a>
+      </div>
+      <h1>I'm Casey.</h1>
+      <h2>a web application developer.</h2>
+    </div>
+
+    <div id="main-container">
+      <div id="profile">
+        <img class="profile-picture" src="images/profile-picture.png" alt="">
+        <h2>Who is Casey Johnson?</h2>
+        <p>I am a proud father, a passable husband, a Taco Bell addict, a hack golfer, a table-top and video game enthusiast, and an ashamed owner of a two-time runner up fantasy football franchise.</p>
+        <p>But what is probably more relevant to you is that I am an actuarial analyst seeking employment as a web application developer.  Actuarial science has not proved to be as interesting or rewarding as I hoped it might (and to be clear, I had pretty low expectations), but I did get a chance to write my first real programs in VBA, which eventually led me to study and fall in love with web development.</p>
+        <!-- <p>My undergraduate and graduate degrees in mathematics and statistics and my professional training as an actuary have proven to be of some value on this new journey, as concepts like functions, order of operations and data manipulation </p> -->
+      </div>
+      <hr>
+      <h2 id="technologies">What does he know?</h2>
+      <div id="skills">
+        <div id="skill-html-css" class="skill">
+          <img class="logo-rectangle" alt="CSS & HTML logo" src="images/css3-html5-logo.svg">
+          <!-- <span class="skill-description">
+            <h3>CSS & HTML</h3>
+          </span> -->
+        </div>
+        <div id="skill-javascript" class="skill">
+          <img class="logo-square" alt="Javascript logo" src="images/javascript-logo.svg">
+          <!-- <span class="skill-description">
+            <h3>Javascript</h3>
+          </span> -->
+        </div>
+        <div id="skill-react" class="skill">
+          <img class="logo-square" alt="React logo" src="images/react-logo.svg">
+          <!-- <span class="skill-description">
+            <h3>React</h3>
+          </span> -->
+        </div>
+        <div id="skill-node" class="skill">
+          <img class="logo-rectangle" alt="Node.js logo" src="images/nodejs-logo.svg">
+          <!-- <span class="skill-description">
+            <h3>Node</h3>
+          </span> -->
+        </div>
+        <div id="skill-mongodb" class="skill">
+          <img class="logo-rectangle" alt="MongoDB logo" src="images/mongodb-logo.svg">
+          <!-- <span class="skill-description">
+            <h3>MongoDB</h3>
+          </span> -->
+        </div>
+      </div>
+      <hr>
+      <div id="projects">
+        <h2>What has he done?</h2>
+        <div class="project-row">
+          <h3>Cube-Level-Midnight</h3>
+          <a href="https://cube-level-midnight.herokuapp.com/"><img src="images/cube-level-midnight.png" alt="Cube-Level-Midnight Screenshot" class="project-thumbnail"></a>
+          <p>Cube-Level-Midnight (which owes its name to Michael Scott's action movie <em>"Threat Level Midnight"</em> from NBC's <em>"The Office"</em>) is a Node web application I built using MongoDB that allows users to create and modify collections of <em>"Magic: The Gathering"</em> cards known as "cubes".  The application requires user authentication, sends HTTPS requests to a third-party API (scryfall.com) to get card data, features a blog containing a few lame articles on cube design that I wrote where users can publicly roast me for my terrible ideas, allows users to send and respond to friend requests and draft cards with their friends in real time.  I am currently working on building a front end for this application using React.</p>
+        </div>
+      </div>
+      <hr>
+      <div id="contact-me">
+        <h2>How can I learn more?</h2>
+        <p>If you're looking for an insatiably curious developer and someone you'd enjoy spending 40+ hours a week working with, let's talk about how I can be of service!</p>
+        <a class="btn" href="mailto:johnson.casey1211@gmail.com">Contact Me!</a>
+        <address>
+          <h3 id="email-label">Email</h3>
+          <a id="email-link" href="mailto:johnson.casey1211@gmail.com">johnson.casey1211@gmail.com</a>
+          <h3 id="cell-label">Cell Phone</h3>
+          <a id="cell-link" href="tel:+1-614-448-6009">614 - 448 - 6009</a>
+        </address>
+      </div>
+    </div>
+
+    <div id="socials">
+      <a class="footer-link" href="https://www.linkedin.com/in/casey-johnson-54466298/" title="LinkedIn"><img class="social-logo" alt="LinkedIn logo" src="images/linkedin-logo.svg" /></a>
+      <a class="footer-link" href="https://github.com/theMostCuriousHomunculus" title="GitHub"><img class="social-logo" alt="GitHub logo" src="images/github-logo.svg" /></a>
+    </div>
+
+    <script src="scripts/hamburger-script.js"></script>
+  </body>
+</html>
